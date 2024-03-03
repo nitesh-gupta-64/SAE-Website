@@ -40,69 +40,48 @@ const Autokriti = () => {
 
         <div className='galleryBody md:w-[47%] w-full bg-gray-200  rounded-full'>
           <div className='gallery before:bg-gray-900'>
-            <img src='https://www.saenitkurukshetra.in/static/media/Nitroxgallery_90.5c6fe744.webp'/>
-            <img src='https://www.saenitkurukshetra.in/static/media/Nitroxgallery_8.79a0bf06.JPG'/>
-            <img src='https://www.saenitkurukshetra.in/static/media/Nitroxgallery_20.e250be25.jpg'/>
-            <img src='https://www.saenitkurukshetra.in/static/media/Nitroxgallery_9.7fbdf79e.JPG'/>
-            <img src='https://www.saenitkurukshetra.in/static/media/Nitroxgallery_21.9e75b0bb.jpg'/>
-            <img src='https://www.saenitkurukshetra.in/static/media/Nitroxgallery_91.7ace3f47.webp'/>
+            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_1.87becbd3.jpg'/>
+            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_16.380f47f8.jpg'/>
+            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_2.f3166697.jpg'/>
+            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_17.c7becea5.jpg'/>
+            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_3.f4e33bd2.jpg'/>
+            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_18.9e20596c.jpg'/>
           </div>  
         </div>
 
         <div className='md:w-[47%] w-full bg-gray-200 min-h-[55vh] rounded-lg'>
           <div className='pic-ctn flex justify-center '>
-            <img src='https://www.saenitkurukshetra.in/static/media/Nitroxgallery_10.7158f601.jpg'/>
-            <img src='https://www.saenitkurukshetra.in/static/media/Nitroxgallery_23.7b6cfc13.jpg'/>
-            <img src='https://www.saenitkurukshetra.in/static/media/Nitroxgallery_92.ee9294aa.webp'/>
-            <img src='https://www.saenitkurukshetra.in/static/media/Nitroxgallery_11.25957150.jpg'/>
-            <img src='https://www.saenitkurukshetra.in/static/media/Nitroxgallery_25.b4aab646.jpg'/>
+            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_4.2c944c1a.jpg'/>
+            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_19.4636b3be.jpg'/>
+            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_5.9dc28a0a.jpg'/>
+            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_20.fb8aceb1.jpg'/>
+            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_6.5767fc47.jpg'/>
           </div>  
         </div>
 
         <div className='galleryBody md:w-[47%] w-full bg-gray-200  rounded-full'>
           <div className='gallery before:bg-gray-900'>
-            <img src='https://www.saenitkurukshetra.in/static/media/AcceleronsGallery_5.892e103f.jpg'/>
-            <img src='https://www.saenitkurukshetra.in/static/media/AcceleronsGallery_6.7e55e36b.png'/>
-            <img src='https://www.saenitkurukshetra.in/static/media/AcceleronsGallery_7.0be8eb1b.jpg'/>
-            <img src='https://www.saenitkurukshetra.in/static/media/AcceleronsGallery_23.d46b9b05.JPG'/>
-            <img src='https://www.saenitkurukshetra.in/static/media/AcceleronsGallery_38.9d713e69.JPG'/>
-            <img src='https://www.saenitkurukshetra.in/static/media/AcceleronsGallery_20.5920c174.jpg'/>
+            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_21.2c98b985.jpg'/>
+            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_7.53b2abb5.jpg'/>
+            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_22.b7cbd7f0.jpg'/>
+            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_8.d523910e.jpg'/>
+            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_23.b6c8cbdc.jpg'/>
+            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_9.51cf18bb.jpg'/>
           </div>  
         </div>
 
         <div className='md:w-[47%] w-full bg-gray-200  min-h-[55vh] rounded-lg'>
           <div className='pic-ctn flex justify-center'>
-            <img src='https://www.saenitkurukshetra.in/static/media/Nitroxgallery_93.4f06ef41.webp'/>
-            <img src="https://www.saenitkurukshetra.in/static/media/Nitroxgallery_13.bd84e446.jpg"/>
-            <img src='https://www.saenitkurukshetra.in/static/media/Nitroxgallery_26.3a8f6272.jpg'/>
-            <img src='https://www.saenitkurukshetra.in/static/media/Nitroxgallery_12.52093cd3.jpg'/>
-            <img src='https://www.saenitkurukshetra.in/static/media/Nitroxgallery_36.2a566113.jpg'/>
-          </div>  
-        </div>
-
-        <div className='galleryBody md:w-[47%] w-full bg-gray-200  rounded-full'>
-          <div className='gallery before:bg-gray-900'>
-            <img src='https://www.saenitkurukshetra.in/static/media/Nitroxgallery_94.6d17fc85.webp'/>
-            <img src='https://www.saenitkurukshetra.in/static/media/Nitroxgallery_11.25957150.jpg'/>
-            <img src='https://www.saenitkurukshetra.in/static/media/Nitroxgallery_61.e4ee2da6.JPG'/>
-            <img src='https://www.saenitkurukshetra.in/static/media/Nitroxgallery_95.8182de2e.webp'/>
-            <img src='https://www.saenitkurukshetra.in/static/media/Nitroxgallery_21.9e75b0bb.jpg'/>
-            <img src='https://www.saenitkurukshetra.in/static/media/Nitroxgallery_1.751447d7.jpg'/>
-          </div>  
-        </div>
-
-        <div className='md:w-[47%] w-full bg-gray-200  min-h-[55vh] rounded-lg'>
-          <div className='pic-ctn flex justify-center'>
-            <img src='https://www.saenitkurukshetra.in/static/media/Nitroxgallery_2.c5dfe1d3.JPG'/>
-            <img src="https://www.saenitkurukshetra.in/static/media/Nitroxgallery_25.b4aab646.jpg"/>
-            <img src='https://www.saenitkurukshetra.in/static/media/Nitroxgallery_6.9130a144.JPG'/>
-            <img src='https://www.saenitkurukshetra.in/static/media/Nitroxgallery_8.79a0bf06.JPG'/>
-            <img src='https://www.saenitkurukshetra.in/static/media/Nitroxgallery_62.eb10cbce.JPG'/>
+            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_24.99508a64.jpg'/>
+            <img src="https://www.saenitkurukshetra.in/static/media/Autokritigallery_27.79434a79.JPG"/>
+            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_29.ed86eca7.JPG'/>
+            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_14.c2f9fcad.jpg'/>
+            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_26.d8a7065e.JPG'/>
           </div>  
         </div>
 
       </div>
-      
+
     </div>
   )
 }
