@@ -14,9 +14,9 @@ const Navbar = () => {
             <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">SAE NIT Kurukshetra</span>
         </a>
       </NavLink>
-      <NavLink to="/navpage">
+      <a href="/navpage">
         <FaBars className='mt-1 text-2xl md:mr-12'/>
-      </NavLink>
+      </a>
     </div>
     
   </div>
