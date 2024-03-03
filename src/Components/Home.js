@@ -48,7 +48,7 @@ const Home = () => {
 
         <h2 className=' pt-8 mt-8 p-2 font-bold text-4xl bg-gradient-to-r from-gray-400 to-gray-900 bg-clip-text text-transparent border-b-4 border-solid border-gray-900 rounded-3xl'>Team Managers</h2>
 
-        <div className='flex items-center justify-around w-full flex-wrap px-8 pb-24'>
+        <div className='flex items-center justify-around w-full flex-wrap px-12 pb-24'>
 
           <div className="infocardContainer bg-gradient-to-r from-gray-400 to-gray-900">
             <div id="main" className=' border-gray-500 border-[10px] border-solid '>
