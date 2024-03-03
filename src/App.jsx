@@ -16,6 +16,7 @@ import PrivacyPolicy from "./Components/PrivacyPolicy";
 import RefundPolicy from "./Components/RefundPolicy";
 import Register from "./Components/Register";
 import MoreInfo from "./Components/MoreInfo";
+import NavPage from "./Components/NavPage";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
           <Route path='/refundpolicy' element={<RefundPolicy/>}/>
           <Route path='/autokriti/register' element={<Register/>}/>
           <Route path='/autokriti12' element={<MoreInfo/>}/>
+          <Route path='/navpage' element={<NavPage/>}/>
           <Route path='*' element={<NotFound/>}/>
         </Route>
       </Routes>
