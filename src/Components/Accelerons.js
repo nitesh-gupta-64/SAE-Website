@@ -31,7 +31,7 @@ const Accelerons = () => {
         </div>
       </div>
 
-      <div className=' h-full md:w-[70%] w-[90%] flex justify-center items-center gap-20 bg-gray-200 p-5 flex-col md:flex-row'>
+      <div className=' h-full md:w-[70%] w-[90%] flex justify-center items-center gap-20 bg-gray-200 p-5 flex-col-reverse md:flex-row'>
         <div className=' md:h-[80vh] h-full md:w-[50%] w-full flex justify-end items-center'>
           <img src={AccImg1} className='w-full md:h-[20vw] h-[40%] rounded-md shadow-[10px_10px_10px_0px_#1a202c]'/>
         </div>
@@ -47,7 +47,7 @@ const Accelerons = () => {
         </div>
       </div>
 
-      <div className=' h-full md:w-[70%] w-[90%] flex justify-center items-center gap-20 bg-gray-200 p-5 flex-col md:flex-row-reverse'>
+      <div className=' h-full md:w-[70%] w-[90%] flex justify-center items-center gap-20 bg-gray-200 p-5 flex-col-reverse md:flex-row-reverse'>
         <div className=' md:h-[80vh] h-full md:w-[50%] w-full flex justify-end items-center'>
           <img src={AccImg2} className='w-full md:h-[20vw] h-[40%] rounded-md shadow-[10px_10px_10px_0px_#1a202c]'/>
         </div>
