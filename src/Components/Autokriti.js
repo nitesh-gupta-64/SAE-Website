@@ -19,7 +19,7 @@ const Autokriti = () => {
           <p className=' font-normal'>
             Autokriti is north India's largest automobile workshop which began in 2010. Every year loads of students gets enrolled to gain firsthand knowledge of industrial vehicles. The last held physical autokriti in 2019 saw a participation of 700+ candidates. It involves overhauling of a star engine, which varied from a 2 stroke engine of a scooter in Autokriti 1 to 3.6L turbocharged V6 Porsche Cayenne in season 11.0; always in cahoots with technology. And not just the gearheads, but geeks from all branches of technology find here the stuffs of their interest.
           </p>
-          <div className='border-x-2 border-black border-solid rounded-[30px] flex items-center flex-col w-[90%] ml-4'>
+          <div className='border-x-2 border-black border-solid rounded-[30px] flex items-center flex-col w-[90%] ml-4 p-4'>
             <p>
               E- Autokriti is a digital edition of Autokriti, where this <br/> legacy of imparting knowledge continues amid the <br/> current covid crisis. And with many new surprises <br/> awaiting e-autokriti 2.0, we are expecting an even <br/> greater engagement.
             </p>
