@@ -6,6 +6,9 @@ import AccImg from '../images/carAccelerons.08cc897b.jpeg'
 import AccImg1 from '../images/AcceleronsFB1.9cfa97b5.webp'
 import AccImg2 from '../images/AcceleronsSupra1.42ee2953.webp'
 
+import { NavLink } from 'react-router-dom'
+import { FaEnvelope, FaLinkedin } from 'react-icons/fa'
+
 const Accelerons = () => {
   return (
     <div className='w-screen h-full bg-gray-900 flex items-center justify-between flex-col gap-10 overflow-x-hidden'>
@@ -124,6 +127,71 @@ const Accelerons = () => {
           </div>  
         </div>
 
+      </div>
+
+      <div className=' bg-gray-200 w-[95%] flex flex-col items-center'>
+
+        <h2 className=' pt-8 mt-8 p-2 font-bold text-4xl bg-gradient-to-r from-gray-400 to-gray-900 bg-clip-text text-transparent border-b-4 border-solid border-gray-900 rounded-3xl'>Team Managers</h2>
+
+        <div className='flex items-center justify-around w-full flex-wrap px-12 pb-24'>
+
+          <div className="infocardContainer bg-gradient-to-r from-gray-400 to-gray-900">
+            <div id="main" className=' border-gray-500 border-[10px] border-solid '>
+              <img src='https://www.saenitkurukshetra.in/static/media/Yasharora.d6916acd.jpg'></img>
+            </div>
+            <div id="textbois" className='flex flex-col justify-evenly'>
+              <h2>Yash Arora</h2>
+              <h4 className=' text-sm ml-4'>Captain</h4>
+              <div className='flex pr-16'>
+                <NavLink to="https://www.linkedin.com/in/yash-arora-0b2027215/"  target='_blank'>
+                  <FaLinkedin style={{height:"20px"}}/>
+                </NavLink>
+                <NavLink to="mailto: yasharora1808@gmail.com">
+                  <FaEnvelope style={{height:"20px"}}/>
+                </NavLink>
+              </div>
+            </div>
+          </div>
+
+          <div className="infocardContainer bg-gradient-to-r from-gray-400 to-gray-900">
+            <div id="main" className=' border-gray-500 border-[10px] border-solid '>
+              <img src='https://www.saenitkurukshetra.in/static/media/Bhupeksh.7df9baf5.jpg'></img>
+            </div>
+            <div id="textbois" className='flex flex-col justify-evenly'>
+              <h2>Bhupeksh</h2>
+              <h4 className='text-sm ml-4'>Vice-Captain</h4>
+              <div className='flex pr-16'>
+                <NavLink to="https://www.linkedin.com/in/bhupeksh-kaushik-360424222/"  target='_blank'>
+                  <FaLinkedin style={{height:"20px"}}/>
+                </NavLink>
+                <NavLink to="mailto: kaushikbhupeksh@gmail.com">
+                  <FaEnvelope style={{height:"20px"}}/>
+                </NavLink>
+              </div>
+            </div>
+          </div>
+          
+          <div className="infocardContainer bg-gradient-to-r from-gray-400 to-gray-900">
+            <div id="main" className=' border-gray-500 border-[10px] border-solid '>
+              <img src='https://www.saenitkurukshetra.in/static/media/man.b3e9680f.png'></img>
+            </div>
+            <div id="textbois" className='flex flex-col justify-evenly'>
+              <h2>Manikya</h2>
+              <h4 className='text-sm ml-4'>EV-Head</h4>
+              <div className='flex pr-16'>
+                <NavLink to="https://www.linkedin.com/in/10manikya/"  target='_blank'>
+                  <FaLinkedin style={{height:"20px"}}/>
+                </NavLink>
+                <NavLink to="mailto: NA@gmail.com">
+                  <FaEnvelope style={{height:"20px"}}/>
+                </NavLink>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        
+        
       </div>
 
     </div>
