@@ -105,7 +105,7 @@ const Footer = () => {
                         <a href='termsandconditions' className='hover:text-red-500'>
                           <FaEnvelopeOpenText/>
                         </a>
-                        <a href="termsandconditions" class="hover:underline hover:text-red-500">Terms & Conditions</a>
+                        <a href="/termsandconditions" class="hover:underline hover:text-red-500">Terms & Conditions</a>
                     </li>
                     <li class="mb-4 flex gap-2 items-center">
                         <a href='privacypolicy' className='hover:text-red-500'>
