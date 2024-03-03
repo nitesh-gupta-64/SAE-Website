@@ -105,7 +105,7 @@
     height: 160px;
     width: 150px;
     border-radius: 100px;
-    transition: all 500ms ease-in;
+    transition: all 400ms ease-in;
     transition-delay: 1s;
     margin: auto;
     margin-top: 100px;
@@ -133,7 +133,7 @@
     white-space: nowrap;
     width: 0;
     height: auto;
-    transition: all 450ms ease-in;
+    transition: all 350ms ease-in;
     transition-delay: 1s;
   }
   .infocardContainer:hover div *{
