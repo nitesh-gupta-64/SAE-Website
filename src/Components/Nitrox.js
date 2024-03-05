@@ -137,7 +137,7 @@ const Nitrox = () => {
               <img src={VicePresident}></img>
             </div>
             <div id="textbois" className='flex flex-col justify-evenly'>
-              <h2>Himanshu Khatri</h2>
+              <h2 className=' mr-4'>Himanshu Khatri</h2>
               <h4 className='text-sm ml-4'>Captain</h4>
               <div className='flex pr-16'>
                 <NavLink to="https://www.linkedin.com/in/hk2107/"  target='_blank'>
@@ -155,7 +155,7 @@ const Nitrox = () => {
               <img src='https://www.saenitkurukshetra.in/static/media/Anmoll.24c79311.jpg'></img>
             </div>
             <div id="textbois" className='flex flex-col justify-evenly'>
-              <h2>Anmol</h2>
+              <h2 className=' mr-4'>Anmol</h2>
               <h4 className='text-sm ml-4'>Vice-Captain</h4>
               <div className='flex pr-16'>
                 <NavLink to="https://www.linkedin.com/in/anmol-chaudhary-278a22225/"  target='_blank'>
@@ -173,7 +173,7 @@ const Nitrox = () => {
               <img src='https://www.saenitkurukshetra.in/static/media/Parn.a707c0f0.jpg'></img>
             </div>
             <div id="textbois" className='flex flex-col justify-evenly'>
-              <h2>Parv Sarin</h2>
+              <h2 className=' mr-4'>Parv Sarin</h2>
               <h4 className='text-sm ml-4'>EV-Head</h4>
               <div className='flex pr-16'>
                 <NavLink to="https://www.linkedin.com/in/parv-sarin/"  target='_blank'>

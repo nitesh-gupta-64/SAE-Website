@@ -146,7 +146,7 @@ const Home = () => {
               <img src={President}></img>
             </div>
             <div id="textbois" className='flex flex-col justify-evenly'>
-              <h2>Vaibhav Dharmani</h2>
+              <h2 className=' mr-4'>Vaibhav Dharmani</h2>
               <h4 className=' text-sm ml-4'>President</h4>
               <div className='flex pr-16'>
                 <NavLink to="https://www.linkedin.com/in/vaibhav-dharmani-aa91a7199/"  target='_blank'>
@@ -164,7 +164,7 @@ const Home = () => {
               <img src={VicePresident}></img>
             </div>
             <div id="textbois" className='flex flex-col justify-evenly'>
-              <h2>Himanshu Khatri</h2>
+              <h2 className=' mr-4'>Himanshu Khatri</h2>
               <h4 className='text-sm ml-4'>Vice President</h4>
               <div className='flex pr-16'>
                 <NavLink to="https://www.linkedin.com/in/hk2107/"  target='_blank'>
@@ -182,7 +182,7 @@ const Home = () => {
               <img src={secy}></img>
             </div>
             <div id="textbois" className='flex flex-col justify-evenly'>
-              <h2>Vinay Saini</h2>
+              <h2 className=' mr-4'>Vinay Saini</h2>
               <h4 className='text-sm ml-4'>Secretary</h4>
               <div className='flex pr-16'>
                 <NavLink to="https://www.linkedin.com/in/vinay-saini-6a3044241/"  target='_blank'>
@@ -200,7 +200,7 @@ const Home = () => {
               <img src={lisha}></img>
             </div>
             <div id="textbois" className='flex flex-col justify-evenly'>
-              <h2>Lisha Garg</h2>
+              <h2 className=' mr-4'>Lisha Garg</h2>
               <h4 className='text-sm ml-4'>Secretary</h4>
               <div className='flex pr-16'>
                 <NavLink to="https://www.linkedin.com/in/lisha-garg-61373a211/"  target='_blank'>

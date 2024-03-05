@@ -140,7 +140,7 @@ const Accelerons = () => {
               <img src='https://www.saenitkurukshetra.in/static/media/Yasharora.d6916acd.jpg'></img>
             </div>
             <div id="textbois" className='flex flex-col justify-evenly'>
-              <h2>Yash Arora</h2>
+              <h2 className=' mr-4'>Yash Arora</h2>
               <h4 className=' text-sm ml-4'>Captain</h4>
               <div className='flex pr-16'>
                 <NavLink to="https://www.linkedin.com/in/yash-arora-0b2027215/"  target='_blank'>
@@ -158,7 +158,7 @@ const Accelerons = () => {
               <img src='https://www.saenitkurukshetra.in/static/media/Bhupeksh.7df9baf5.jpg'></img>
             </div>
             <div id="textbois" className='flex flex-col justify-evenly'>
-              <h2>Bhupeksh</h2>
+              <h2 className=' mr-4'>Bhupeksh</h2>
               <h4 className='text-sm ml-4'>Vice-Captain</h4>
               <div className='flex pr-16'>
                 <NavLink to="https://www.linkedin.com/in/bhupeksh-kaushik-360424222/"  target='_blank'>
@@ -176,7 +176,7 @@ const Accelerons = () => {
               <img src='https://www.saenitkurukshetra.in/static/media/man.b3e9680f.png'></img>
             </div>
             <div id="textbois" className='flex flex-col justify-evenly'>
-              <h2>Manikya</h2>
+              <h2 className=' mr-4'>Manikya</h2>
               <h4 className='text-sm ml-4'>EV-Head</h4>
               <div className='flex pr-16'>
                 <NavLink to="https://www.linkedin.com/in/10manikya/"  target='_blank'>
