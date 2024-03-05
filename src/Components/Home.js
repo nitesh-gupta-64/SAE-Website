@@ -139,7 +139,7 @@ const Home = () => {
 
 
   return (
-    <div className='w-screen h-full bg-gray-900 flex items-center justify-between flex-col gap-10 overflow-x-hidden'>
+    <div className='w-screen h-full bg-gray-900 flex items-center justify-between flex-col gap-10 overflow-hidden'>
 
       {/* <HeroPhoto img={HomePage}/> */}
 
