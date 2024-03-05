@@ -149,7 +149,7 @@ const Home = () => {
         trigger: ".aan2",
         toggleActions: "restart pause resume reset",
       },
-      duration: 6,
+      duration: 4,
       y:0,
       opacity: 1,
       ease: Power3.easeOut,
@@ -309,7 +309,7 @@ const Home = () => {
 
 
 
-      <div className=' bg-gray-200 w-[95%] flex flex-col items-center aan2 translate-y-24 opacity-0'>
+      <div className=' bg-gray-200 w-[95%] flex flex-col items-center aan2 translate-y-48 opacity-0'>
 
         <h2 className=' pt-8 mt-8 p-2 font-bold text-4xl bg-gradient-to-r from-gray-400 to-gray-900 bg-clip-text text-transparent border-b-4 border-solid border-gray-900 rounded-3xl'>Team Managers</h2>
 
