@@ -83,7 +83,7 @@ const Home = () => {
     gsap.to("#weimg", {
       scrollTrigger: {
         trigger: "#weimg",
-        toggleActions: "restart none none none",
+        toggleActions: "restart none restart none",
       },
       duration: 1.5,
       x:0,
@@ -94,10 +94,41 @@ const Home = () => {
     gsap.to("#wedesc", {
       scrollTrigger: {
         trigger: "#wedesc",
-        toggleActions: "restart none none none",
+        toggleActions: "restart none restart none",
       },
       duration: 1.5,
       x:0,
+      opacity: 1,
+      ease: Power3.easeOut,
+    })
+
+    gsap.to(".aan", {
+      scrollTrigger: {
+        trigger: ".aan",
+        toggleActions: "restart pause resume reset",
+      },
+      duration: 3,
+      y:0,
+      opacity: 1,
+      ease: Power3.easeOut,
+    })
+    gsap.to(".aan1", {
+      scrollTrigger: {
+        trigger: ".aan1",
+        toggleActions: "restart pause resume reset",
+      },
+      duration: 3,
+      y:0,
+      opacity: 1,
+      ease: Power3.easeOut,
+    })
+    gsap.to(".aan2", {
+      scrollTrigger: {
+        trigger: ".aan2",
+        toggleActions: "restart pause resume reset",
+      },
+      duration: 1,
+      y:0,
       opacity: 1,
       ease: Power3.easeOut,
     })
@@ -149,10 +180,10 @@ const Home = () => {
 
 
       <div id='weare' className=' h-full md:w-[70%] w-[90%] flex justify-center items-center gap-20 bg-gray-200 p-5 flex-col md:flex-row'>
-        <div id='weimg' className=' translate-x-[-1000px] opacity-0 md:h-[80vh] h-full md:w-[50%] w-full flex justify-end items-center'>
+        <div id='weimg' className=' translate-x-[-100px] opacity-0 md:h-[80vh] h-full md:w-[50%] w-full flex justify-end items-center'>
           <img src={AccImg} className='w-full md:h-[20vw] h-[40%] rounded-md shadow-[10px_10px_10px_0px_#1a202c]'/>
         </div>
-        <div id='wedesc' className='translate-x-[1000px] opacity-0 text-gray-900 md:w-[60%] w-full h-[90%] flex flex-col md:gap-12 gap-6 justify-start'>
+        <div id='wedesc' className='translate-x-[100px] opacity-0 text-gray-900 md:w-[60%] w-full h-[90%] flex flex-col md:gap-12 gap-6 justify-start'>
           <h2 className='font-bold text-2xl'>Who are <span className='bg-gradient-to-r from-gray-400 to-gray-900 bg-clip-text text-transparent'>We?</span></h2>
           <p className=' font-normal'>
             SAE NIT Kurukshetra is a collegiate club affiliated with SAE India, which is a wing of SAE International, on a national scale. The club is a platform for budding engineers to work together to arrive at solutions to the problems in the mobility field. It forms a link between naive talents and pioneers of the industry. Valuing the interdisciplinary nature of the automobile sector, undergraduate students from various branches strive to innovate better under the guidance of our professors here at NIT Kurukshetra. We bring our skills to many competitions.
@@ -167,7 +198,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className='grid place-content-center w-screen'>
+      <div className='grid place-content-center w-screen aan translate-y-24 opacity-0'>
         <div className="container bg-gray-200 md:p-20 w-[95vw] md:h-[44vw] h-[15rem] p-8">
           <NavLink to="/accelerons" className="box box-1" data-text="Accelerons"></NavLink>
           <NavLink to="/autokriti" className="box box-2" data-text="Autokriti"></NavLink>
@@ -179,7 +210,7 @@ const Home = () => {
 
       <div className='w-[95%] flex md:flex-row flex-col justify-evenly flex-wrap overflow-hidden gap-4'>
 
-        <div className='galleryBody md:w-[47%] w-full bg-gray-200  rounded-full'>
+        <div className='galleryBody md:w-[47%] w-full bg-gray-200 rounded-full aan1 translate-y-24 opacity-0'>
           <div className='gallery before:bg-gray-900'>
             <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_1.87becbd3.jpg'/>
             <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_16.380f47f8.jpg'/>
@@ -190,7 +221,7 @@ const Home = () => {
           </div>  
         </div>
 
-        <div className='md:w-[47%] w-full bg-gray-200 min-h-[55vh] rounded-lg'>
+        <div className='md:w-[47%] w-full bg-gray-200 min-h-[55vh] rounded-lg aan1 translate-y-24 opacity-0'>
           <div className='pic-ctn flex justify-center '>
             <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_4.2c944c1a.jpg'/>
             <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_19.4636b3be.jpg'/>
@@ -200,7 +231,7 @@ const Home = () => {
           </div>  
         </div>
 
-        <div className='galleryBody md:w-[47%] w-full bg-gray-200  rounded-full'>
+        <div className='galleryBody md:w-[47%] w-full bg-gray-200 rounded-full aan1 translate-y-24 opacity-0'>
           <div className='gallery before:bg-gray-900'>
             <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_21.2c98b985.jpg'/>
             <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_7.53b2abb5.jpg'/>
@@ -211,7 +242,7 @@ const Home = () => {
           </div>  
         </div>
 
-        <div className='md:w-[47%] w-full bg-gray-200  min-h-[55vh] rounded-lg'>
+        <div className='md:w-[47%] w-full bg-gray-200  min-h-[55vh] rounded-lg aan1 translate-y-24 opacity-0'>
           <div className='pic-ctn flex justify-center'>
             <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_24.99508a64.jpg'/>
             <img src="https://www.saenitkurukshetra.in/static/media/Autokritigallery_27.79434a79.JPG"/>
@@ -226,7 +257,7 @@ const Home = () => {
 
 
 
-      <div className=' bg-gray-200 w-[95%] flex flex-col items-center'>
+      <div className=' bg-gray-200 w-[95%] flex flex-col items-center aan2 translate-y-24 opacity-0'>
 
         <h2 className=' pt-8 mt-8 p-2 font-bold text-4xl bg-gradient-to-r from-gray-400 to-gray-900 bg-clip-text text-transparent border-b-4 border-solid border-gray-900 rounded-3xl'>Team Managers</h2>
 
