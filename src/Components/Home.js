@@ -42,7 +42,7 @@ const Home = () => {
 
       <div className=' w-screen h-screen relative flex justify-center items-center'>
 
-        <video autoPlay loop muted className='w-full h-[100vh] object-cover absolute top-0 left-0'>
+        <video autoPlay loop muted playsInline className='w-full h-[100vh] object-cover absolute top-0 left-0'>
           <source src={bgvideo}/>
         </video>
 
