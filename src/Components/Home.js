@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import HomePage from '../images/HomePage.webp'
 import HeroPhoto from './HeroPhoto'
 import AccImg from '../images/Accelerons.jpeg'
@@ -12,8 +12,59 @@ import homeNitrox from '../images/homeNitrox.webp'
 import homeAcc1 from '../images/homeAcc1.webp'
 import bgvideo from '../videos/bgvideo.MP4'
 import saeLogo from '../images/saeLogo.png'
+import { useEffect, useRef } from 'react'
+import { Power3 } from 'gsap';
+import { Tween } from 'gsap/gsap-core';
+import gsap from 'gsap';
 
 const Home = () => {
+
+  let sae = useRef(null)
+  let nitkkr = useRef(null)
+
+  useEffect(() => {
+    gsap.from(
+      "#sae",
+      {
+        duration: 2,
+        x:-1000,
+        opacity: 0,
+        ease: Power3.easeOut
+      }
+    )
+    gsap.to(
+      "#sae",
+      {
+        duration: 2,
+        x:0,
+        opacity: 1,
+        ease: Power3.easeOut
+      }
+    )
+  
+  }, [])
+
+  useEffect(() => {
+    gsap.from(
+      "#nitkkr",
+      {
+        duration: 2,
+        x:1000,
+        opacity: 0,
+        ease: Power3.easeOut
+      }
+    )
+    gsap.to(
+      "#nitkkr",
+      {
+        duration: 2,
+        x:0,
+        opacity: 1,
+        ease: Power3.easeOut
+      }
+    )
+  
+  }, [])
 
 
   return (
@@ -48,8 +99,8 @@ const Home = () => {
 
         <div className='front w-full h-[65vh] bg-gray-900 opacity-70 rounded-tr-full rounded-bl-full flex flex-col justify-center items-center pb-4 gap-6'>
           {/* <img  src={saeLogo}  className='md:w-[30%] w-[60%]'/> */}
-          <h1 className='font-[ANTA] text-4xl md:text-6xl lg:text-9xl text-gray-200 uppercase rounded-tr-full rounded-bl-full pl-16 pr-8 mr-8'>SAE</h1>
-          <h2 className='font-[ANTA] text-2xl md:text-4xl lg:text-7xl text-gray-200 uppercase rounded-tr-full rounded-bl-full pl-10 pr-5 mr-5'>nit Kurukshetra</h2>
+          <h1 id='sae' ref={sae} className='font-[ANTA] text-4xl md:text-6xl lg:text-9xl text-gray-200 uppercase rounded-tr-full rounded-bl-full pl-16 pr-8 mr-8'>SAE</h1>
+          <h2 id='nitkkr' ref={nitkkr} className='font-[ANTA] text-2xl md:text-4xl lg:text-7xl text-gray-200 uppercase rounded-tr-full rounded-bl-full pl-10 pr-5 mr-5'>nit Kurukshetra</h2>
         </div>
 
       </div>
