@@ -127,7 +127,37 @@ const Home = () => {
         trigger: ".aan2",
         toggleActions: "restart pause resume reset",
       },
-      duration: 1,
+      duration: 3,
+      y:0,
+      opacity: 1,
+      ease: Power3.easeOut,
+    })
+    gsap.to(".aan3", {
+      scrollTrigger: {
+        trigger: ".aan3",
+        toggleActions: "restart pause resume reset",
+      },
+      duration: 3,
+      y:0,
+      opacity: 1,
+      ease: Power3.easeOut,
+    })
+    gsap.to(".aan4", {
+      scrollTrigger: {
+        trigger: ".aan4",
+        toggleActions: "restart pause resume reset",
+      },
+      duration: 3,
+      y:0,
+      opacity: 1,
+      ease: Power3.easeOut,
+    })
+    gsap.to(".aan5", {
+      scrollTrigger: {
+        trigger: ".aan5",
+        toggleActions: "restart pause resume reset",
+      },
+      duration: 3,
       y:0,
       opacity: 1,
       ease: Power3.easeOut,
@@ -221,7 +251,7 @@ const Home = () => {
           </div>  
         </div>
 
-        <div className='md:w-[47%] w-full bg-gray-200 min-h-[55vh] rounded-lg aan1 translate-y-24 opacity-0'>
+        <div className='md:w-[47%] w-full bg-gray-200 min-h-[55vh] rounded-lg aan3 translate-y-24 opacity-0'>
           <div className='pic-ctn flex justify-center '>
             <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_4.2c944c1a.jpg'/>
             <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_19.4636b3be.jpg'/>
@@ -231,7 +261,7 @@ const Home = () => {
           </div>  
         </div>
 
-        <div className='galleryBody md:w-[47%] w-full bg-gray-200 rounded-full aan1 translate-y-24 opacity-0'>
+        <div className='galleryBody md:w-[47%] w-full bg-gray-200 rounded-full aan4 translate-y-24 opacity-0'>
           <div className='gallery before:bg-gray-900'>
             <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_21.2c98b985.jpg'/>
             <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_7.53b2abb5.jpg'/>
@@ -242,7 +272,7 @@ const Home = () => {
           </div>  
         </div>
 
-        <div className='md:w-[47%] w-full bg-gray-200  min-h-[55vh] rounded-lg aan1 translate-y-24 opacity-0'>
+        <div className='md:w-[47%] w-full bg-gray-200  min-h-[55vh] rounded-lg aan5 translate-y-24 opacity-0'>
           <div className='pic-ctn flex justify-center'>
             <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_24.99508a64.jpg'/>
             <img src="https://www.saenitkurukshetra.in/static/media/Autokritigallery_27.79434a79.JPG"/>
