@@ -127,7 +127,7 @@ const Home = () => {
         trigger: ".aan2",
         toggleActions: "restart pause resume reset",
       },
-      duration: 3,
+      duration: 6,
       y:0,
       opacity: 1,
       ease: Power3.easeOut,
