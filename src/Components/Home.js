@@ -80,6 +80,28 @@ const Home = () => {
       }
     )
 
+    gsap.to("#sae", {
+      scrollTrigger: {
+        trigger: "#sae",
+        toggleActions: "restart none restart none",
+      },
+      duration: 1.5,
+      x:0,
+      opacity: 1,
+      ease: Power3.easeOut,
+    })
+
+    gsap.to("#nitkkr", {
+      scrollTrigger: {
+        trigger: "#nitkkr",
+        toggleActions: "restart none restart none",
+      },
+      duration: 1.5,
+      x:0,
+      opacity: 1,
+      ease: Power3.easeOut,
+    })
+
     gsap.to("#weimg", {
       scrollTrigger: {
         trigger: "#weimg",
