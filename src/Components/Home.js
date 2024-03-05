@@ -19,52 +19,67 @@ import gsap from 'gsap';
 
 const Home = () => {
 
-  let sae = useRef(null)
-  let nitkkr = useRef(null)
-
   useEffect(() => {
     gsap.from(
       "#sae",
       {
-        duration: 2,
+        duration: 1,
         x:-1000,
         opacity: 0,
         ease: Power3.easeOut
       }
-    )
+    ).delay(.6)
     gsap.to(
       "#sae",
       {
-        duration: 2,
+        duration: 1,
         x:0,
         opacity: 1,
+        ease: Power3.easeOut
+      }
+    ).delay(.6)
+
+    gsap.from(
+      "#nitkkr",
+      {
+        duration: 1,
+        x:1000,
+        opacity: 0,
+        ease: Power3.easeOut
+      }
+    ).delay(.6)
+    gsap.to(
+      "#nitkkr",
+      {
+        duration: 1,
+        x:0,
+        opacity: 1,
+        ease: Power3.easeOut
+      }
+    ).delay(.6)
+
+    gsap.from(
+      "#herobg",
+      {
+        duration: 1,
+        y:1000,
+        opacity: 0,
+        ease: Power3.easeOut
+      }
+    )
+    gsap.to(
+      "#herobg",
+      {
+        duration: 1,
+        y:0,
+        opacity: 0.7,
         ease: Power3.easeOut
       }
     )
   
   }, [])
 
-  useEffect(() => {
-    gsap.from(
-      "#nitkkr",
-      {
-        duration: 2,
-        x:1000,
-        opacity: 0,
-        ease: Power3.easeOut
-      }
-    )
-    gsap.to(
-      "#nitkkr",
-      {
-        duration: 2,
-        x:0,
-        opacity: 1,
-        ease: Power3.easeOut
-      }
-    )
-  
-  }, [])
+
 
 
   return (
@@ -97,10 +112,10 @@ const Home = () => {
           <source src={bgvideo}/>
         </video>
 
-        <div className='front w-full h-[65vh] bg-gray-900 opacity-70 rounded-tr-full rounded-bl-full flex flex-col justify-center items-center pb-4 gap-6'>
+        <div id='herobg' className='front w-full h-[65vh] bg-gray-900 opacity-70 rounded-tr-full rounded-bl-full flex flex-col justify-center items-center pb-4 gap-6'>
           {/* <img  src={saeLogo}  className='md:w-[30%] w-[60%]'/> */}
-          <h1 id='sae' ref={sae} className='font-[ANTA] text-4xl md:text-6xl lg:text-9xl text-gray-200 uppercase rounded-tr-full rounded-bl-full pl-16 pr-8 mr-8'>SAE</h1>
-          <h2 id='nitkkr' ref={nitkkr} className='font-[ANTA] text-2xl md:text-4xl lg:text-7xl text-gray-200 uppercase rounded-tr-full rounded-bl-full pl-10 pr-5 mr-5'>nit Kurukshetra</h2>
+          <h1 id='sae' className='font-[ANTA] text-4xl md:text-6xl lg:text-9xl text-gray-200 uppercase rounded-tr-full rounded-bl-full pl-16 pr-8 mr-8'>SAE</h1>
+          <h2 id='nitkkr' className='font-[ANTA] text-2xl md:text-4xl lg:text-7xl text-gray-200 uppercase rounded-tr-full rounded-bl-full pl-10 pr-5 mr-5'>nit Kurukshetra</h2>
         </div>
 
       </div>
