@@ -1,9 +1,6 @@
 import React from 'react'
 import './Accelerons.css'
 import HeroPhoto from './HeroPhoto'
-import { NavLink } from 'react-router-dom'
-import { FaEnvelope, FaLinkedin } from 'react-icons/fa'
-import VicePresident from '../images/VicePre.18ad3964.jpg'
 
 const Autokriti = () => {
   return (

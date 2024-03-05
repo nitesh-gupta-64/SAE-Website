@@ -8,6 +8,10 @@ import VicePresident from '../images/VicePre.18ad3964.jpg'
 import secy from '../images/secyy.71e6c715.jpg'
 import lisha from '../images/lisha.900452bb.jpg'
 import { FaEnvelope, FaLinkedin } from 'react-icons/fa'
+import homeNitrox from '../images/homeNitrox.webp'
+import homeAcc1 from '../images/homeAcc1.webp'
+import bgvideo from '../videos/bgvideo.MP4'
+import saeLogo from '../images/saeLogo.png'
 
 const Home = () => {
 
@@ -15,7 +19,43 @@ const Home = () => {
   return (
     <div className='w-screen h-full bg-gray-900 flex items-center justify-between flex-col gap-10 overflow-x-hidden'>
 
-      <HeroPhoto img={HomePage}/>
+      {/* <HeroPhoto img={HomePage}/> */}
+
+      {/* <div className='flex w-screen h-screen lg:flex-row flex-col'>
+
+        <div className='lg:w-[50%] w-full lg:h-full h-[50%] bg-gradient-to-bl from-gray-900 via-gray-900 to-black relative z-[5] flex justify-center items-start pt-16'>
+        <h2 className='font-bold text-6xl text-white'><span className='bg-gradient-to-r from-gray-500 to-gray-900 bg-clip-text text-transparent uppercase'>Nitrox</span></h2>
+          <img src={homeNitrox} className='absolute bottom-0 left-[10%] z-[1] h-[27vh] lg:h-[55vh]'/>
+          <div className=' bg-white w-full h-[0.5px] absolute z-0 bottom-[25%] lg:flex hidden'></div>
+          <h1 className='absolute top-[45%] right-[-16%] font-["Anta"] text-9xl text-gray-300 lg:flex hidden'>SAE</h1>
+        </div>
+
+        <div className='h-[50%] w-full lg:h-full bg-gradient-to-br from-gray-900 via-gray-900 to-black lg:w-[50%] relative flex justify-center items-end'>
+          <img src={homeAcc1} className=' absolute z-[2] left-[5%] top-[10%] h-[18vh] lg:h-[34vh]'/>
+          <div className=' bg-white w-full h-[0.5px] absolute z-0 top-[32%] lg:flex hidden'></div>
+          <h2 className='font-bold text-5xl text-white'><span className='bg-gradient-to-r from-gray-500 to-gray-900 bg-clip-text text-transparent uppercase'>Accelerons</span></h2>
+        </div>
+
+      </div> */}
+
+
+
+      <div className=' w-screen h-screen relative flex justify-center items-center'>
+
+        <video autoPlay loop muted className='w-full h-[100vh] object-cover absolute top-0 left-0'>
+          <source src={bgvideo}/>
+        </video>
+
+        <div className='front w-full h-[65vh] bg-gray-900 opacity-70 rounded-tr-full rounded-bl-full flex flex-col justify-center items-center pb-4 gap-6'>
+          {/* <img  src={saeLogo}  className='md:w-[30%] w-[60%]'/> */}
+          <h1 className='font-[ANTA] text-4xl md:text-6xl lg:text-9xl text-gray-200 uppercase rounded-tr-full rounded-bl-full pl-16 pr-8 mr-8'>SAE</h1>
+          <h2 className='font-[ANTA] text-2xl md:text-4xl lg:text-7xl text-gray-200 uppercase rounded-tr-full rounded-bl-full pl-10 pr-5 mr-5'>nit Kurukshetra</h2>
+        </div>
+
+      </div>
+
+
+
 
       <div className=' h-full md:w-[70%] w-[90%] flex justify-center items-center gap-20 bg-gray-200 p-5 flex-col md:flex-row'>
         <div className=' md:h-[80vh] h-full md:w-[50%] w-full flex justify-end items-center'>
@@ -43,6 +83,57 @@ const Home = () => {
           <NavLink to="/nitrox" className="box box-3" data-text="Nitrox"></NavLink>
         </div>
       </div>
+
+
+
+      <div className='w-[95%] flex md:flex-row flex-col justify-evenly flex-wrap overflow-hidden gap-4'>
+
+        <div className='galleryBody md:w-[47%] w-full bg-gray-200  rounded-full'>
+          <div className='gallery before:bg-gray-900'>
+            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_1.87becbd3.jpg'/>
+            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_16.380f47f8.jpg'/>
+            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_2.f3166697.jpg'/>
+            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_17.c7becea5.jpg'/>
+            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_3.f4e33bd2.jpg'/>
+            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_18.9e20596c.jpg'/>
+          </div>  
+        </div>
+
+        <div className='md:w-[47%] w-full bg-gray-200 min-h-[55vh] rounded-lg'>
+          <div className='pic-ctn flex justify-center '>
+            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_4.2c944c1a.jpg'/>
+            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_19.4636b3be.jpg'/>
+            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_5.9dc28a0a.jpg'/>
+            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_20.fb8aceb1.jpg'/>
+            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_6.5767fc47.jpg'/>
+          </div>  
+        </div>
+
+        <div className='galleryBody md:w-[47%] w-full bg-gray-200  rounded-full'>
+          <div className='gallery before:bg-gray-900'>
+            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_21.2c98b985.jpg'/>
+            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_7.53b2abb5.jpg'/>
+            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_22.b7cbd7f0.jpg'/>
+            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_8.d523910e.jpg'/>
+            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_23.b6c8cbdc.jpg'/>
+            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_9.51cf18bb.jpg'/>
+          </div>  
+        </div>
+
+        <div className='md:w-[47%] w-full bg-gray-200  min-h-[55vh] rounded-lg'>
+          <div className='pic-ctn flex justify-center'>
+            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_24.99508a64.jpg'/>
+            <img src="https://www.saenitkurukshetra.in/static/media/Autokritigallery_27.79434a79.JPG"/>
+            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_29.ed86eca7.JPG'/>
+            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_14.c2f9fcad.jpg'/>
+            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_26.d8a7065e.JPG'/>
+          </div>  
+        </div>
+
+      </div>
+
+
+
 
       <div className=' bg-gray-200 w-[95%] flex flex-col items-center'>
 
