@@ -16,8 +16,11 @@ import { useEffect, useRef } from 'react'
 import { Power3 } from 'gsap';
 import { Tween } from 'gsap/gsap-core';
 import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 const Home = () => {
+
+  gsap.registerPlugin(ScrollTrigger)
 
   useEffect(() => {
     gsap.from(
@@ -76,6 +79,28 @@ const Home = () => {
         ease: Power3.easeOut
       }
     )
+
+    gsap.to("#weimg", {
+      scrollTrigger: {
+        trigger: "#weimg",
+        toggleActions: "restart none none none",
+      },
+      duration: 1,
+      x:0,
+      opacity: 1,
+      ease: Power3.easeOut,
+    })
+
+    gsap.to("#wedesc", {
+      scrollTrigger: {
+        trigger: "#wedesc",
+        toggleActions: "restart none none none",
+      },
+      duration: 1,
+      x:0,
+      opacity: 1,
+      ease: Power3.easeOut,
+    })
   
   }, [])
 
@@ -106,7 +131,7 @@ const Home = () => {
 
 
 
-      <div className=' w-screen h-screen relative flex justify-center items-center bg-gray-300'>
+      <div id='herovid' className=' w-screen h-screen relative flex justify-center items-center bg-gray-300'>
 
         <video autoPlay loop muted playsInline className='w-full h-[100vh] object-cover absolute top-0 left-0'>
           <source src={bgvideo}/>
@@ -123,11 +148,11 @@ const Home = () => {
 
 
 
-      <div className=' h-full md:w-[70%] w-[90%] flex justify-center items-center gap-20 bg-gray-200 p-5 flex-col md:flex-row'>
-        <div className=' md:h-[80vh] h-full md:w-[50%] w-full flex justify-end items-center'>
+      <div id='weare' className=' h-full md:w-[70%] w-[90%] flex justify-center items-center gap-20 bg-gray-200 p-5 flex-col md:flex-row'>
+        <div id='weimg' className=' translate-x-[-1000px] opacity-0 md:h-[80vh] h-full md:w-[50%] w-full flex justify-end items-center'>
           <img src={AccImg} className='w-full md:h-[20vw] h-[40%] rounded-md shadow-[10px_10px_10px_0px_#1a202c]'/>
         </div>
-        <div className='text-gray-900 md:w-[60%] w-full h-[90%] flex flex-col md:gap-12 gap-6 justify-start'>
+        <div id='wedesc' className='translate-x-[1000px] opacity-0 text-gray-900 md:w-[60%] w-full h-[90%] flex flex-col md:gap-12 gap-6 justify-start'>
           <h2 className='font-bold text-2xl'>Who are <span className='bg-gradient-to-r from-gray-400 to-gray-900 bg-clip-text text-transparent'>We?</span></h2>
           <p className=' font-normal'>
             SAE NIT Kurukshetra is a collegiate club affiliated with SAE India, which is a wing of SAE International, on a national scale. The club is a platform for budding engineers to work together to arrive at solutions to the problems in the mobility field. It forms a link between naive talents and pioneers of the industry. Valuing the interdisciplinary nature of the automobile sector, undergraduate students from various branches strive to innovate better under the guidance of our professors here at NIT Kurukshetra. We bring our skills to many competitions.
