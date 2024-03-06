@@ -321,6 +321,10 @@ const Home = () => {
 
       <div className='w-[95%] flex md:flex-row flex-col justify-evenly flex-wrap overflow-hidden gap-4'>
 
+        <div className=' w-full flex justify-center'>
+        <h2 className='font-bold text-4xl md:text-5xl text-gray-200'>Visual <span className='bg-gradient-to-r from-gray-200 to-gray-700 bg-clip-text text-transparent uppercase'>archive</span></h2>
+        </div>
+
         <div className='galleryBody md:w-[47%] w-full bg-gray-900 rounded-full aan1 translate-y-24 opacity-0'>
           <div className='gallery md:before:bg-gray-300'>
             <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_1.87becbd3.jpg'/>
