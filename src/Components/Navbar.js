@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
 <nav className="border-gray-200 bg-gray-900 top-0 w-full text-white ">
   <div className="max-w-screen-xl flex justify-center mx-auto">
-    <div className='fixed w-full flex justify-between mx-auto p-4 z-10 bg-transparent backdrop-blur-sm'>
+    <div className='fixed w-full flex justify-between mx-auto p-4 z-10 bg-transparent backdrop-blur-lg'>
       <NavLink to="/">
         <a className="flex items-center space-x-3 rtl:space-x-reverse relative md:ml-20 ml-9">
             <img src={saeLogo} className="h-12 absolute left-[-20%]" />
