@@ -32,7 +32,7 @@ const Home = () => {
     return images;
 }
 
-  const images = importAll(require.context('../images/visualArchive', false, /\.jpg/));
+  const images = importAll(require.context('../images/visualArchive', false, /\.webp/));
 
 
   gsap.registerPlugin(ScrollTrigger)
@@ -337,43 +337,43 @@ const Home = () => {
 
         <div className='galleryBody md:w-[47%] w-full bg-gray-900 rounded-full aan1 translate-y-24 opacity-0'>
           <div className='gallery md:before:bg-gray-300'>
-            <img src={images['11.jpg']} />
-            <img src={images['1.jpg']} />
-            <img src={images['2.jpg']} />
-            <img src={images['3.jpg']} />
-            <img src={images['4.jpg']} />
-            <img src={images['5.jpg']} />
+            <img src={images['11.webp']} />
+            <img src={images['1.webp']} />
+            <img src={images['2.webp']} />
+            <img src={images['3.webp']} />
+            <img src={images['4.webp']} />
+            <img src={images['5.webp']} />
           </div>  
         </div>
 
         <div className='md:w-[47%] w-full bg-gray-900 min-h-[55vh] rounded-lg aan3 translate-y-24 opacity-0'>
           <div className='pic-ctn flex justify-center '>
-            <img src={images['6.jpg']} />
-            <img src={images['7.jpg']} />
-            <img src={images['8.jpg']} />
-            <img src={images['9.jpg']} />
-            <img src={images['10.jpg']} />
+            <img src={images['6.webp']} />
+            <img src={images['7.webp']} />
+            <img src={images['8.webp']} />
+            <img src={images['9.webp']} />
+            <img src={images['10.webp']} />
           </div>  
         </div>
 
         <div className='galleryBody md:w-[47%] w-full bg-gray-900 rounded-full aan4 translate-y-24 opacity-0'>
           <div className='gallery md:before:bg-gray-300'>
-            <img src={images['12.jpg']} />
-            <img src={images['13.jpg']} />
-            <img src={images['14.jpg']} />
-            <img src={images['15.jpg']} />
-            <img src={images['16.jpg']} />
-            <img src={images['17.jpg']} />
+            <img src={images['12.webp']} />
+            <img src={images['13.webp']} />
+            <img src={images['14.webp']} />
+            <img src={images['15.webp']} />
+            <img src={images['16.webp']} />
+            <img src={images['17.webp']} />
           </div>  
         </div>
 
         <div className='md:w-[47%] w-full bg-gray-900  min-h-[55vh] rounded-lg aan5 translate-y-24 opacity-0'>
           <div className='pic-ctn flex justify-center'>
-            <img src={images['18.jpg']} />
-            <img src={images['19.jpg']} />
-            <img src={images['20.jpg']} />
-            <img src={images['21.jpg']} />
-            <img src={images['22.jpg']} />
+            <img src={images['18.webp']} />
+            <img src={images['19.webp']} />
+            <img src={images['20.webp']} />
+            <img src={images['21.webp']} />
+            <img src={images['22.webp']} />
           </div>  
         </div>
 
