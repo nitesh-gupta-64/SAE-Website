@@ -18,7 +18,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import 'swiper/css';
 import 'swiper/css/effect-cube';
 import 'swiper/css/pagination';
-import { EffectCube, Pagination } from 'swiper/modules';
+import { Autoplay, EffectCube, Pagination } from 'swiper/modules';
 import baja from '../images/baja.png'
 import atvc from '../images/atvc.jpg'
 import supra from '../images/supra.png'
@@ -286,6 +286,10 @@ const Home = () => {
         <Swiper
           effect={'cube'}
           grabCursor={true}
+          autoplay={{
+            "delay": 2000,
+            "disableOnInteraction": false,
+          }}
           cubeEffect={{
             shadow: true,
             slideShadows: true,
@@ -293,7 +297,7 @@ const Home = () => {
             shadowScale: 0.94,
           }}
           pagination={true}
-          modules={[EffectCube, Pagination]}
+          modules={[EffectCube, Pagination, Autoplay]}
           className="mySwiper"
         >
           <SwiperSlide>
