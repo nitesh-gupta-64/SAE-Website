@@ -335,7 +335,7 @@ const Home = () => {
         <h2 className='font-bold text-4xl md:text-5xl text-gray-200'>Visual <span className='bg-gradient-to-r from-gray-200 to-gray-700 bg-clip-text text-transparent uppercase'>archive</span></h2>
         </div>
 
-        <div className='galleryBody md:w-[47%] w-full bg-gray-900 rounded-full aan1 translate-y-24 opacity-0'>
+        {/* <div className='galleryBody md:w-[47%] w-full bg-gray-900 rounded-full aan1 translate-y-24 opacity-0'>
           <div className='gallery md:before:bg-gray-300'>
             <img src={images['11.webp']} />
             <img src={images['1.webp']} />
@@ -344,7 +344,7 @@ const Home = () => {
             <img src={images['4.webp']} />
             <img src={images['5.webp']} />
           </div>  
-        </div>
+        </div> */}
 
         <div className='md:w-[47%] w-full bg-gray-900 min-h-[55vh] rounded-lg aan3 translate-y-24 opacity-0'>
           <div className='pic-ctn flex justify-center '>
@@ -356,7 +356,7 @@ const Home = () => {
           </div>  
         </div>
 
-        <div className='galleryBody md:w-[47%] w-full bg-gray-900 rounded-full aan4 translate-y-24 opacity-0'>
+        {/* <div className='galleryBody md:w-[47%] w-full bg-gray-900 rounded-full aan4 translate-y-24 opacity-0'>
           <div className='gallery md:before:bg-gray-300'>
             <img src={images['12.webp']} />
             <img src={images['13.webp']} />
@@ -365,7 +365,7 @@ const Home = () => {
             <img src={images['16.webp']} />
             <img src={images['17.webp']} />
           </div>  
-        </div>
+        </div> */}
 
         <div className='md:w-[47%] w-full bg-gray-900  min-h-[55vh] rounded-lg aan5 translate-y-24 opacity-0'>
           <div className='pic-ctn flex justify-center'>
