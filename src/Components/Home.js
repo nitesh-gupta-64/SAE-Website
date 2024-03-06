@@ -346,6 +346,16 @@ const Home = () => {
           </div>  
         </div> */}
 
+        <div className='md:w-[47%] w-full bg-gray-900 min-h-[55vh] rounded-lg aan1 translate-y-24 opacity-0'>
+          <div className='pic-ctn flex justify-center '>
+            <img src={images['1.webp']} />
+            <img src={images['2.webp']} />
+            <img src={images['3.webp']} />
+            <img src={images['4.webp']} />
+            <img src={images['5.webp']} />
+          </div>  
+        </div>
+
         <div className='md:w-[47%] w-full bg-gray-900 min-h-[55vh] rounded-lg aan3 translate-y-24 opacity-0'>
           <div className='pic-ctn flex justify-center '>
             <img src={images['6.webp']} />
@@ -366,6 +376,16 @@ const Home = () => {
             <img src={images['17.webp']} />
           </div>  
         </div> */}
+
+        <div className='md:w-[47%] w-full bg-gray-900 min-h-[55vh] rounded-lg aan4 translate-y-24 opacity-0'>
+          <div className='pic-ctn flex justify-center '>
+            <img src={images['13.webp']} />
+            <img src={images['14.webp']} />
+            <img src={images['15.webp']} />
+            <img src={images['16.webp']} />
+            <img src={images['17.webp']} />
+          </div>  
+        </div>
 
         <div className='md:w-[47%] w-full bg-gray-900  min-h-[55vh] rounded-lg aan5 translate-y-24 opacity-0'>
           <div className='pic-ctn flex justify-center'>
