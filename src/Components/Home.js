@@ -309,7 +309,7 @@ const Home = () => {
 
 
 
-      <div className='grid place-content-center w-screen aan translate-y-24 opacity-0'>
+      <div className='md:grid place-content-center w-screen aan translate-y-24 opacity-0 hidden'>
         <div className="container bg-gray-900 md:p-20 w-[95vw] md:h-[44vw] h-[15rem] p-8">
           <NavLink to="/accelerons" className="box box-1" data-text="Accelerons"></NavLink>
           <NavLink to="/autokriti" className="box box-2" data-text="Autokriti"></NavLink>
