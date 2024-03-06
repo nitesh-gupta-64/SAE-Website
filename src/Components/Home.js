@@ -319,9 +319,9 @@ const Home = () => {
 
 
 
-      <div className='w-[95%] flex md:flex-row flex-col justify-evenly flex-wrap overflow-hidden gap-4'>
+      <div className='w-[95%] flex md:flex-row flex-col flex-wrap overflow-hidden'>
 
-        <div className=' w-full flex justify-center'>
+        <div className=' w-full flex justify-center mt-8'>
         <h2 className='font-bold text-4xl md:text-5xl text-gray-200'>Visual <span className='bg-gradient-to-r from-gray-200 to-gray-700 bg-clip-text text-transparent uppercase'>archive</span></h2>
         </div>
 
