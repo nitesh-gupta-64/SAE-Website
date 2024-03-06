@@ -1,4 +1,5 @@
 import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import HomePage from '../images/HomePage.webp'
 import HeroPhoto from './HeroPhoto'
 import AccImg from '../images/Accelerons.jpeg'
@@ -17,6 +18,14 @@ import { Power3 } from 'gsap';
 import { Tween } from 'gsap/gsap-core';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import 'swiper/css';
+import 'swiper/css/effect-cube';
+import 'swiper/css/pagination';
+import { EffectCube, Pagination } from 'swiper/modules';
+import baja from '../images/baja.png'
+import atvc from '../images/atvc.jpg'
+import supra from '../images/supra.png'
+import formula from '../images/formula.png'
 
 const Home = () => {
 
@@ -184,6 +193,16 @@ const Home = () => {
       opacity: 1,
       ease: Power3.easeOut,
     })
+    gsap.to(".aan6", {
+      scrollTrigger: {
+        trigger: ".aan6",
+        toggleActions: "restart pause resume reset",
+      },
+      duration: 3,
+      y:0,
+      opacity: 1,
+      ease: Power3.easeOut,
+    })
   
   }, [])
 
@@ -231,27 +250,67 @@ const Home = () => {
 
 
 
-      <div id='weare' className=' h-full md:w-[70%] w-[90%] flex justify-center items-center gap-20 bg-gray-200 p-5 flex-col md:flex-row'>
+      <div id='weare' className=' h-full md:w-[70%] w-[90%] flex justify-center items-center gap-20 bg-gray-900 p-5 flex-col md:flex-row'>
         <div id='weimg' className=' translate-x-[-100px] opacity-0 md:h-[80vh] h-full md:w-[50%] w-full flex justify-end items-center'>
           <img src={AccImg} className='w-full md:h-[20vw] h-[40%] rounded-md shadow-[10px_10px_10px_0px_#1a202c]'/>
         </div>
-        <div id='wedesc' className='translate-x-[100px] opacity-0 text-gray-900 md:w-[60%] w-full h-[90%] flex flex-col md:gap-12 gap-6 justify-start'>
+        <div id='wedesc' className='translate-x-[100px] opacity-0 text-gray-200 md:w-[60%] w-full h-[90%] flex flex-col md:gap-12 gap-6 justify-start'>
           <h2 className='font-bold text-2xl'>Who are <span className='bg-gradient-to-r from-gray-400 to-gray-900 bg-clip-text text-transparent'>We?</span></h2>
           <p className=' font-normal'>
             SAE NIT Kurukshetra is a collegiate club affiliated with SAE India, which is a wing of SAE International, on a national scale. The club is a platform for budding engineers to work together to arrive at solutions to the problems in the mobility field. It forms a link between naive talents and pioneers of the industry. Valuing the interdisciplinary nature of the automobile sector, undergraduate students from various branches strive to innovate better under the guidance of our professors here at NIT Kurukshetra. We bring our skills to many competitions.
           </p>
-          <p>We bring our skills to many competitions</p>
-          <div className='border-x-2 border-black border-solid rounded-[30px] flex items-center flex-col w-[90%] ml-4'>
-            <p>Baja SAE India</p>
-            <p>ATVC</p>
-            <p>SUPRA India</p>
-            <p>Formula Bharat</p>
-          </div>
+          
         </div>
       </div>
 
+
+
+      <div className='aan6 h-full w-screen flex flex-col justify-evenly items-center gap-8 opacity-0 translate-y-52'>
+
+      <div className='flex flex-col gap-8 w-full items-center'>
+        <h2 className='font-bold text-2xl md:text-4xl text-gray-200 ml-8'>We bring our skills to many <span className='bg-gradient-to-r from-gray-200 to-gray-700 bg-clip-text text-transparent uppercase'>competitions</span></h2>
+        <div className='border-x-2 border-gray-200 border-solid rounded-[30px] text-gray-200 flex items-center flex-col w-[60%] ml-4'>
+          <p>Baja SAE India</p>
+          <p>ATVC</p>
+          <p>SUPRA India</p>
+          <p>Formula Bharat</p>
+        </div>
+      </div>
+
+        <Swiper
+          effect={'cube'}
+          grabCursor={true}
+          cubeEffect={{
+            shadow: true,
+            slideShadows: true,
+            shadowOffset: 20,
+            shadowScale: 0.94,
+          }}
+          pagination={true}
+          modules={[EffectCube, Pagination]}
+          className="mySwiper"
+        >
+          <SwiperSlide>
+            <img src={baja} className=' hover:opacity-70' />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={atvc} className=' hover:opacity-70' />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={supra} className=' hover:opacity-70' />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={formula}  className=' hover:opacity-70'/>
+          </SwiperSlide>
+        </Swiper>
+      </div>
+
+
+
+
+
       <div className='grid place-content-center w-screen aan translate-y-24 opacity-0'>
-        <div className="container bg-gray-200 md:p-20 w-[95vw] md:h-[44vw] h-[15rem] p-8">
+        <div className="container bg-gray-900 md:p-20 w-[95vw] md:h-[44vw] h-[15rem] p-8">
           <NavLink to="/accelerons" className="box box-1" data-text="Accelerons"></NavLink>
           <NavLink to="/autokriti" className="box box-2" data-text="Autokriti"></NavLink>
           <NavLink to="/nitrox" className="box box-3" data-text="Nitrox"></NavLink>
@@ -262,8 +321,8 @@ const Home = () => {
 
       <div className='w-[95%] flex md:flex-row flex-col justify-evenly flex-wrap overflow-hidden gap-4'>
 
-        <div className='galleryBody md:w-[47%] w-full bg-gray-200 rounded-full aan1 translate-y-24 opacity-0'>
-          <div className='gallery before:bg-gray-900'>
+        <div className='galleryBody md:w-[47%] w-full bg-gray-900 rounded-full aan1 translate-y-24 opacity-0'>
+          <div className='gallery md:before:bg-gray-300'>
             <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_1.87becbd3.jpg'/>
             <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_16.380f47f8.jpg'/>
             <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_2.f3166697.jpg'/>
@@ -273,7 +332,7 @@ const Home = () => {
           </div>  
         </div>
 
-        <div className='md:w-[47%] w-full bg-gray-200 min-h-[55vh] rounded-lg aan3 translate-y-24 opacity-0'>
+        <div className='md:w-[47%] w-full bg-gray-900 min-h-[55vh] rounded-lg aan3 translate-y-24 opacity-0'>
           <div className='pic-ctn flex justify-center '>
             <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_4.2c944c1a.jpg'/>
             <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_19.4636b3be.jpg'/>
@@ -283,8 +342,8 @@ const Home = () => {
           </div>  
         </div>
 
-        <div className='galleryBody md:w-[47%] w-full bg-gray-200 rounded-full aan4 translate-y-24 opacity-0'>
-          <div className='gallery before:bg-gray-900'>
+        <div className='galleryBody md:w-[47%] w-full bg-gray-900 rounded-full aan4 translate-y-24 opacity-0'>
+          <div className='gallery md:before:bg-gray-300'>
             <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_21.2c98b985.jpg'/>
             <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_7.53b2abb5.jpg'/>
             <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_22.b7cbd7f0.jpg'/>
@@ -294,7 +353,7 @@ const Home = () => {
           </div>  
         </div>
 
-        <div className='md:w-[47%] w-full bg-gray-200  min-h-[55vh] rounded-lg aan5 translate-y-24 opacity-0'>
+        <div className='md:w-[47%] w-full bg-gray-900  min-h-[55vh] rounded-lg aan5 translate-y-24 opacity-0'>
           <div className='pic-ctn flex justify-center'>
             <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_24.99508a64.jpg'/>
             <img src="https://www.saenitkurukshetra.in/static/media/Autokritigallery_27.79434a79.JPG"/>
@@ -309,9 +368,9 @@ const Home = () => {
 
 
 
-      <div className=' bg-gray-200 w-[95%] flex flex-col items-center aan2 translate-y-48 opacity-0'>
+      <div className=' bg-gray-900 w-[95%] flex flex-col items-center aan2 translate-y-48 opacity-0'>
 
-        <h2 className=' pt-8 mt-8 p-2 font-bold text-4xl bg-gradient-to-r from-gray-400 to-gray-900 bg-clip-text text-transparent border-b-4 border-solid border-gray-900 rounded-3xl'>Team Managers</h2>
+        <h2 className=' pt-8 mt-8 p-2 font-bold text-4xl bg-gradient-to-r from-gray-200 to-gray-700 bg-clip-text text-transparent border-b-4 border-solid border-gray-300 rounded-3xl'>Team Managers</h2>
 
         <div className='flex items-center justify-around w-full flex-wrap px-12 pb-24'>
 
