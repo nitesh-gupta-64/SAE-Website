@@ -9,13 +9,10 @@ import VicePresident from '../images/VicePre.18ad3964.jpg'
 import secy from '../images/secyy.71e6c715.jpg'
 import lisha from '../images/lisha.900452bb.jpg'
 import { FaEnvelope, FaLinkedin } from 'react-icons/fa'
-import homeNitrox from '../images/homeNitrox.webp'
-import homeAcc1 from '../images/homeAcc1.webp'
 import bgvideo from '../videos/bgvideo.MP4'
 import saeLogo from '../images/saeLogo.png'
 import { useEffect, useRef } from 'react'
 import { Power3 } from 'gsap';
-import { Tween } from 'gsap/gsap-core';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import 'swiper/css';
@@ -28,6 +25,15 @@ import supra from '../images/supra.png'
 import formula from '../images/formula.png'
 
 const Home = () => {
+
+  function importAll(r) {
+    let images = {};
+    r.keys().map(item => { images[item.replace('./', '')] = r(item); });
+    return images;
+}
+
+  const images = importAll(require.context('../images/visualArchive', false, /\.jpg/));
+
 
   gsap.registerPlugin(ScrollTrigger)
 
@@ -327,43 +333,43 @@ const Home = () => {
 
         <div className='galleryBody md:w-[47%] w-full bg-gray-900 rounded-full aan1 translate-y-24 opacity-0'>
           <div className='gallery md:before:bg-gray-300'>
-            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_1.87becbd3.jpg'/>
-            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_16.380f47f8.jpg'/>
-            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_2.f3166697.jpg'/>
-            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_17.c7becea5.jpg'/>
-            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_3.f4e33bd2.jpg'/>
-            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_18.9e20596c.jpg'/>
+            <img src={images['11.jpg']} />
+            <img src={images['1.jpg']} />
+            <img src={images['2.jpg']} />
+            <img src={images['3.jpg']} />
+            <img src={images['4.jpg']} />
+            <img src={images['5.jpg']} />
           </div>  
         </div>
 
         <div className='md:w-[47%] w-full bg-gray-900 min-h-[55vh] rounded-lg aan3 translate-y-24 opacity-0'>
           <div className='pic-ctn flex justify-center '>
-            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_4.2c944c1a.jpg'/>
-            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_19.4636b3be.jpg'/>
-            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_5.9dc28a0a.jpg'/>
-            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_20.fb8aceb1.jpg'/>
-            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_6.5767fc47.jpg'/>
+            <img src={images['6.jpg']} />
+            <img src={images['7.jpg']} />
+            <img src={images['8.jpg']} />
+            <img src={images['9.jpg']} />
+            <img src={images['10.jpg']} />
           </div>  
         </div>
 
         <div className='galleryBody md:w-[47%] w-full bg-gray-900 rounded-full aan4 translate-y-24 opacity-0'>
           <div className='gallery md:before:bg-gray-300'>
-            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_21.2c98b985.jpg'/>
-            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_7.53b2abb5.jpg'/>
-            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_22.b7cbd7f0.jpg'/>
-            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_8.d523910e.jpg'/>
-            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_23.b6c8cbdc.jpg'/>
-            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_9.51cf18bb.jpg'/>
+            <img src={images['12.jpg']} />
+            <img src={images['13.jpg']} />
+            <img src={images['14.jpg']} />
+            <img src={images['15.jpg']} />
+            <img src={images['16.jpg']} />
+            <img src={images['17.jpg']} />
           </div>  
         </div>
 
         <div className='md:w-[47%] w-full bg-gray-900  min-h-[55vh] rounded-lg aan5 translate-y-24 opacity-0'>
           <div className='pic-ctn flex justify-center'>
-            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_24.99508a64.jpg'/>
-            <img src="https://www.saenitkurukshetra.in/static/media/Autokritigallery_27.79434a79.JPG"/>
-            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_29.ed86eca7.JPG'/>
-            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_14.c2f9fcad.jpg'/>
-            <img src='https://www.saenitkurukshetra.in/static/media/Autokritigallery_26.d8a7065e.JPG'/>
+            <img src={images['18.jpg']} />
+            <img src={images['19.jpg']} />
+            <img src={images['20.jpg']} />
+            <img src={images['21.jpg']} />
+            <img src={images['22.jpg']} />
           </div>  
         </div>
 
